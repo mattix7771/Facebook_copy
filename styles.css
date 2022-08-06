@@ -48,6 +48,7 @@ body {
 }
 
 .input a {
+    display: block;
     text-align: center;
     text-decoration: none;
 }
@@ -68,11 +69,12 @@ body {
 
 .outtro {
     text-align: center;
+    font-size: 11pt;
 }
 
 .outtro a {
     font-weight: bolder;
     color: black;
     text-decoration: none;
-    font-size: 10pt;
+    font-size: 11pt;
 }
