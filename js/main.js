@@ -1,3 +1,4 @@
-document.getElementById("createAcc").onclick = function() {
-    location.href = "create.html"
+Testfunction() {
+    var popup = document.getElementById("mypopup");
+    popup.classList.toggle("show");
 }
