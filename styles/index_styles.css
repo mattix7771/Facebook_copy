@@ -90,17 +90,27 @@ body {
     cursor: pointer;
 }
 
-.popuptext {
+.popup .popuptext {
     visibility: hidden;
-    width: 5cm;
+    width: 160px;
     height: 5cm;
     background-color: aquamarine;
+    color: bisque;
+    text-align: center;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
     position: absolute;
 }
 
 .popuptext::after {
     content: "";
     position: absolute;
+    top: 100%;
+    left: 50%;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
 }
 
 .popup .show {
