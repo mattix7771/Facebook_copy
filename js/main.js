@@ -1,3 +1,3 @@
-function ChangeBackground(color) {
-    document.body.style.backgroundColor = color;
+document.getElementById("createAcc").onclick = function() {
+    location.href = "create.html"
 }
