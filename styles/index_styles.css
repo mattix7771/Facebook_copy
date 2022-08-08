@@ -40,6 +40,9 @@ body {
     font-size: 13pt;
 }
 
+
+/* Login button */
+
 .submit {
     background-color: #1877f2;
     font-size: larger;
@@ -52,21 +55,6 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
-}
-
-.input button {
-    background-color: #3dae25;
-    width: auto;
-    height: 1.2cm;
-    margin-left: 25%;
-    border-radius: 8px;
-    border-style: hidden;
-    color: white;
-    font-size: 12pt;
-    font-weight: bold;
-    padding-left: 15px;
-    padding-right: 15px;
-    cursor: pointer;
 }
 
 .outtro {
@@ -84,22 +72,41 @@ body {
 
 /* Popup container*/
 
+
+/* Create account Button */
+
 .popup {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    background-color: #3dae25;
+    width: auto;
+    height: 0.9cm;
+    margin-left: 25%;
+    border-radius: 8px;
+    border-style: hidden;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
 }
+
+
+/* Popup */
 
 .popup .popuptext {
     visibility: hidden;
-    width: 160px;
-    height: 5cm;
-    background-color: aquamarine;
+    width: 435px;
+    height: 560px;
+    background-color: white;
     color: bisque;
     text-align: center;
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
+    left: -28%;
+    top: -700%;
     margin-left: -80px;
     position: absolute;
 }

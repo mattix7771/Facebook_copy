@@ -1,4 +1,4 @@
-function Testfunction() {
+function CreateAcc() {
     var popup = document.getElementById("mypopup");
     popup.classList.toggle("show");
 }
