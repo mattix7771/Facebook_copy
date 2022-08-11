@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../styles/index_styles.css">
-    <script src="../js/main.js"></script>
+
 </head>
 
 <body>
@@ -33,10 +33,42 @@
             <br>
             <br>
 
-            <div class="popup" onclick="CreateAcc()">Create new account
-                <span id="mypopup" class="popuptext">popup text</span>
+            <div class="create" onclick="OpenPop()">Create new account
+                <div id="popup" class="popup" name="popup">
+                    <form action="../connect.php" method="post">
+                        <input type="text" placeholder="   First name" id="f_name" name="f_name">
+                        <input type="text" placeholder="   Last name" id="l_name" name="l_name">
+                        <input type="text" placeholder="   Mobile number or email" id="username" name="username">
+                        <input type="text" placeholder="   New password" id="password" name="password">
+                        <select id="bd_month" name="bd_month">
+                            <option value="Jan"></option>
+                            <option value="Feb"></option>
+                            <option value="Mar"></option>
+                        </select>
+                        <select id="bd_day" name="bd_day">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                        <select id="bd_year" name="bd_year">
+                            <option value="2000"></option>
+                            <option value="2001"></option>
+                            <option value="2002"></option>
+                        </select>
+                        <input type="radio" id="male" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" value="Other">
+                        <label for="other">Other</label>
 
+
+                        <input type="submit" onclick="ClosePop()" value="Log In" class="submit">
+                    </form>
+                </div>
             </div>
+
+
 
         </div>
     </div>
@@ -49,7 +81,7 @@
 
 
 
-
+    <script src="../js/main.js"></script>
 
 </body>
 

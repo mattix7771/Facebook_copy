@@ -69,13 +69,7 @@ body {
     font-size: 11pt;
 }
 
-
-/* Popup container*/
-
-
-/* Create account Button */
-
-.popup {
+.create {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -97,7 +91,7 @@ body {
 
 /* Popup */
 
-.popup .popuptext {
+.popup {
     visibility: hidden;
     width: 435px;
     height: 560px;
@@ -111,6 +105,12 @@ body {
     position: absolute;
 }
 
+.open-popup {
+    visibility: visible;
+}
+
+
+/*
 .popuptext::after {
     content: "";
     position: absolute;
@@ -143,3 +143,4 @@ body {
         opacity: 1;
     }
 }
+*/
