@@ -39,7 +39,7 @@
                     <p>It's quick and easy.<br><span class="underline">____________________________________________________________</span></p>
 
                     <div class="form">
-                        <form action="../connect.php" method="post">
+                        <form action="../connect.php" method="POST">
 
                             <input type="text" placeholder="   First name" id="f_name" name="f_name">
                             <input type="text" placeholder="   Last name" id="l_name" name="l_name">
@@ -49,14 +49,14 @@
                                 <img src="https://p.kindpng.com/picc/s/237-2377709_big-question-mark-png-transparent-png.png" alt="question_mark" class="qm">
                             </p>
                             <select id="bd_month" name="bd_month" class="dropdown">
-                                <option value="Jan">Jan</option>
-                                <option value="Feb">Feb</option>
-                                <option value="Mar">Mar</option>
+                                <option value="01">Jan</option>
+                                <option value="02">Feb</option>
+                                <option value="03">Mar</option>
                             </select>
                             <select id="bd_day" name="bd_day" class="dropdown">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
                             </select>
                             <select id="bd_year" name="bd_year" class="dropdown">
                                 <option value="2000">2000</option>
@@ -71,9 +71,9 @@
                             <input type="radio" name="icecream" value="choco" id="vanila" tyle="float:right">
                             <label for="vanila" class="radio" style="float:left">Vanila</label>-->
 
-                            <label class="radio"><input type="radio" name="gender">Male</label>
-                            <label class="radio"><input type="radio" name="gender">Female</label>
-                            <label class="radio"><input type="radio" name="gender">Other</label>
+                            <label class="radio"><input type="radio" id="gender_m" name="gender" value="m">Male</label>
+                            <label class="radio"><input type="radio" id="gender_f" name="gender" value="f">Female</label>
+                            <label class="radio"><input type="radio" id="gender_o" name="gender" value="o">Other</label>
 
                             <div class="legal">
                                 <p>People who use our service may have uploaded your contact information to facebook. <a href="https://www.facebook.com/legal/terms/update" style="display:inline-block">Learn more</a>.</p>
