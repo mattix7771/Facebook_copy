@@ -26,45 +26,65 @@
             <form action="../connect.php" method="post">
                 <input type="text" id="username" placeholder="   Email or phone number" name="username">
                 <input type="text" id="password" placeholder="   Password" name="password">
-                <input type="submit" value="Log In" class="submit">
+                <input type="submit" value="Log In" class="submit" style="font-size: 14.8pt;">
             </form>
 
-            <a href="google.com">Forgot password?</a> _______________________________________
+            <a href="google.com">Forgot password?</a><span class="underline" style="margin-left: 0px;">________________________________________</span>
             <br>
             <br>
 
             <div class="create" onclick="OpenPop()">Create new account
                 <div id="popup" class="popup" name="popup">
-                    <form action="../connect.php" method="post">
-                        <input type="text" placeholder="   First name" id="f_name" name="f_name">
-                        <input type="text" placeholder="   Last name" id="l_name" name="l_name">
-                        <input type="text" placeholder="   Mobile number or email" id="username" name="username">
-                        <input type="text" placeholder="   New password" id="password" name="password">
-                        <select id="bd_month" name="bd_month">
-                            <option value="Jan"></option>
-                            <option value="Feb"></option>
-                            <option value="Mar"></option>
-                        </select>
-                        <select id="bd_day" name="bd_day">
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                        </select>
-                        <select id="bd_year" name="bd_year">
-                            <option value="2000"></option>
-                            <option value="2001"></option>
-                            <option value="2002"></option>
-                        </select>
-                        <input type="radio" id="male" value="Male">
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" value="Female">
-                        <label for="female">Female</label>
-                        <input type="radio" id="other" value="Other">
-                        <label for="other">Other</label>
+                    <h3>Sign Up</h3>
+                    <p>It's quick and easy.<br><span class="underline">____________________________________________________________</span></p>
 
+                    <div class="form">
+                        <form action="../connect.php" method="post">
 
-                        <input type="submit" onclick="ClosePop()" value="Log In" class="submit">
-                    </form>
+                            <input type="text" placeholder="   First name" id="f_name" name="f_name">
+                            <input type="text" placeholder="   Last name" id="l_name" name="l_name">
+                            <input type="text" placeholder="   Mobile number or email" id="username" name="username">
+                            <input type="text" placeholder="   New password" id="password" name="password">
+                            <p>Birthday
+                                <img src="https://p.kindpng.com/picc/s/237-2377709_big-question-mark-png-transparent-png.png" alt="question_mark" class="qm">
+                            </p>
+                            <select id="bd_month" name="bd_month" class="dropdown">
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                            </select>
+                            <select id="bd_day" name="bd_day" class="dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select id="bd_year" name="bd_year" class="dropdown">
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                            </select>
+                            <br>
+                            <p>Gender
+                                <img src="https://p.kindpng.com/picc/s/237-2377709_big-question-mark-png-transparent-png.png" alt="question_mark" class="qm">
+                            </p>
+                            <!--
+                            <input type="radio" name="icecream" value="choco" id="vanila" tyle="float:right">
+                            <label for="vanila" class="radio" style="float:left">Vanila</label>-->
+
+                            <label class="radio"><input type="radio" name="gender">Male</label>
+                            <label class="radio"><input type="radio" name="gender">Female</label>
+                            <label class="radio"><input type="radio" name="gender">Other</label>
+
+                            <div class="legal">
+                                <p>People who use our service may have uploaded your contact information to facebook. <a href="https://www.facebook.com/legal/terms/update" style="display:inline-block">Learn more</a>.</p>
+                                <p>By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update" style="display:inline-block">Terms</a>. Learn how we collect, use and share your data in our
+                                    <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" style="display:inline-block">Privacy Policy</a> and how we use cookies and similar technology in our <a href="https://www.facebook.com/policies/cookies/"
+                                        style="display:inline-block">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
+                            </div>
+
+                            <input type="submit" onclick="ClosePop()" value="Sign up" class="form_signup">
+                        </form>
+                    </div>
                 </div>
             </div>
 
