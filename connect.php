@@ -8,7 +8,7 @@
     $month = $_POST['bd_month'];
     $year = $_POST['bd_year'];
     #$date = $day.",".$month.",".$year; 
-    $date = $year.",".$day.",".$month; 
+    $date = $year.",".$month.",".$day;
     $gender = $_POST['gender'];
 
     //Database connection
