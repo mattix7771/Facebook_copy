@@ -27,3 +27,16 @@ for (var i = 2022; i > 1904; i--) {
     option.innerHTML = i;
     bd_year.options.add(option);
 }
+
+var activeElements = [];
+
+function Red(id) {
+    activeElements.add(id);
+
+    if (activeElements.length > 1) {
+        for (var i = 0; i < activeElements.count() - 1; i++) {
+            var comp = document.getElementById(activeElements[i]);
+            comp.classList.add("redborder");
+        }
+    }
+}
