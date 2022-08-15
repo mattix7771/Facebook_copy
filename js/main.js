@@ -8,6 +8,10 @@ function ClosePop() {
     popup.classList.remove("open-popup");
 }
 
+function Quit() {
+    document.location.reload();
+}
+
 var bd_day = document.getElementById("bd_day");
 for (var i = 1; i < 32; i++) {
     var option = document.createElement('option');

